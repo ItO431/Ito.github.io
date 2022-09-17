@@ -1,0 +1,29 @@
+h1  {
+    text-align: center;
+    font-family: "黑體-繁";
+}
+
+h2{
+    
+    text-align: center;
+}
+
+h3{
+     
+    text-align: center;
+}
+
+h5{
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+h6{
+    color: brown;
+    text-align: center;
+}
+
+.container{
+    background-color: rgb(254, 232, 205);
+    padding: 50px;
+}

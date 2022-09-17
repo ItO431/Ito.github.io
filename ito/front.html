@@ -1,0 +1,337 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="front.css">
+    <script src="cal.js"></script>
+    <script src="calh.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="jquery-3.6.0.js"></script>
+</head>
+
+<body onload="acale();cale();">
+    <div class="container">
+        <h1>棕色塵埃數值計算機</h1>
+        <h6>僅計算攻擊&血量力</h6>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#block1" data-toggle="tab" class="nav-link active">攻擊</a></li>
+            <li class="nav-item"><a href="#block2" data-toggle="tab" class="nav-link">生命</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="container tab-pane active" id="block1">
+                <form id='aform'>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="form-floating">
+                                <input type="text" id="aatt" placeholder="攻擊力" class="form-control">
+                                <label>攻擊力("基本能力->詳細")</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>攻擊力</h3>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="form-floating">
+                                <input type="text" id="aweapon" placeholder="武器(%)" class="form-control">
+                                <label>武器(%)</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h2 id="mma"></h2>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" id="acollection" placeholder="收藏品(%)" class="form-control">
+                                <label>收藏品(%)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" id="acollection2" placeholder="收藏品(%)" class="form-control">
+                                <label>收藏品(%)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" id="acollection3" placeholder="收藏品(固定數值)" class="form-control">
+                                <label>收藏品(固定數值)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" id="acollection4" placeholder="收藏品(固定數值)" class="form-control">
+                                <label>收藏品(固定數值)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" id="afrp" placeholder="1號符文(%)" class="form-control">
+                                <label>1號符文(%)</label>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="afrpp" placeholder="1號符文(%)" class="form-control">
+                                <label>1號符文(%)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="afrf" placeholder="1號符文(固定數值)" class="form-control">
+                                <label>1號符文(固定數值)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="afrff" placeholder="1號符文(固定數值)" class="form-control">
+                                <label>1號符文(固定數值)</label></div>
+                            
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="asrp" placeholder="2號符文(%)" class="form-control">
+                                <label>2號符文(%)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="asrpp" placeholder="2號符文(%)" class="form-control">
+                                <label>2號符文(%)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="asrf" placeholder="2號符文(固定數值)" class="form-control">
+                                <label>2號符文(固定數值)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="asrff" placeholder="2號符文(固定數值)" class="form-control">
+                                <label>2號符文(固定數值)</label></div>
+                            
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="amrp" placeholder="神話符文(%)" class="form-control">
+                                <label>神話符文(%)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="amrpp" placeholder="神話符文(%)" class="form-control">
+                                <label>神話符文(%)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="amrppp" placeholder="神話符文(%)" class="form-control">
+                                <label>神話符文(%)</label></div>
+                            
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="amrf" placeholder="神話符文(固定數值)" class="form-control">
+                                <label>神話符文(固定數值)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="amrff" placeholder="神話符文(固定數值)" class="form-control">
+                                <label>神話符文(固定數值)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="amrfff" placeholder="神話符文(固定數值)"class="form-control">
+                                <label>神話符文(固定數值)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="acombination" placeholder="有才輸入,否則空白"
+                                    class="form-control">
+                                <label>組合效果</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container tab-pane fade" id="block2">
+                <form id='form'>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="form-floating">
+                                <input type="text" id="hp" placeholder="生命力" class="form-control">
+                                <label>生命力("基本能力->詳細")</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>生命力</h3>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" id="armor" placeholder="防具(%)" class="form-control">
+                                <label>防具(%)</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h2 id="mmh"></h2>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" id="collection" placeholder="收藏品(%)" class="form-control">
+                                <label>收藏品(%)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" id="collection2" placeholder="收藏品(%)" class="form-control">
+                                <label>收藏品(%)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" id="collection3" placeholder="收藏品(固定數值)" class="form-control">
+                                <label>收藏品(固定數值)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" id="collection4" placeholder="收藏品(固定數值)" class="form-control">
+                                <label>收藏品(固定數值)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating">
+                                <input type="text" id="frp" placeholder="1號符文(%)" class="form-control">
+                                <label>1號符文(%)</label>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="frpp" placeholder="1號符文(%)" class="form-control">
+                                <label>1號符文(%)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="frf" placeholder="1號符文(固定數值)" class="form-control">
+                                <label>1號符文(固定數值)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="frff" placeholder="1號符文(固定數值)" class="form-control">
+                                <label>1號符文(固定數值)</label></div>
+                            
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="srp" placeholder="2號符文(%)" class="form-control">
+                                <label>2號符文(%)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="srpp" placeholder="2號符文(%)" class="form-control">
+                                <label>2號符文(%)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="srf" placeholder="2號符文(固定數值)" class="form-control">
+                                <label>2號符文(固定數值)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="srff" placeholder="2號符文(固定數值)" class="form-control">
+                                <label>2號符文(固定數值)</label></div>
+                            
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="mrp" placeholder="神話符文(%)" class="form-control">
+                                <label>神話符文(%)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="mrpp" placeholder="神話符文(%)" class="form-control">
+                                <label>神話符文(%)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="mrppp" placeholder="神話符文(%)" class="form-control">
+                                <label>神話符文(%)</label></div>
+                            
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="mrf" placeholder="神話符文(固定數值)" class="form-control">
+                                <label>神話符文(固定數值)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="mrff" placeholder="神話符文(固定數值)" class="form-control">
+                                <label>神話符文(固定數值)</label></div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="mrfff" placeholder="神話符文(固定數值)"class="form-control">
+                                <label>神話符文(固定數值)</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="combination" placeholder="有才輸入,否則空白" class="form-control">
+                                <label>組合效果</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
