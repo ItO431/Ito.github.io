@@ -37,41 +37,62 @@
                                 <label>攻擊力("基本能力->詳細")</label>
                             </div>
                         </div>
-
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="form-floating">
-                                <input type="text" id="aweapon" placeholder="武器(%)" class="form-control">
+                                <input list="aaweapon" id="aweapon" placeholder="武器(%)" class="form-control">
                                 <label>武器(%)</label>
+                                <datalist id="aaweapon">
+                                    <option value="5">
+                                    <option value="20">
+                                </datalist>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-floating">
-                                <input type="text" id="acollection" placeholder="收藏品(%)" class="form-control">
+                                <input list="aacollection" id="acollection" placeholder="收藏品(%)" class="form-control">
                                 <label>收藏品(%)</label>
+                                <datalist id="aacollection">
+                                    <option value="5">
+                                    <option value="20">
+                                </datalist>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-floating">
-                                <input type="text" id="acollection2" placeholder="收藏品(%)" class="form-control">
+                                <input list="aacollection2" id="acollection2" placeholder="收藏品(%)" class="form-control">
                                 <label>收藏品(%)</label>
+                                <datalist id="aacollection2">
+                                    <option value="5">
+                                    <option value="20">
+                                </datalist>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-floating">
-                                <input type="text" id="acollection3" placeholder="收藏品(固定數值)" class="form-control">
+                                <input list="aacollection3" id="acollection3" placeholder="收藏品(固定數值)"
+                                    class="form-control">
                                 <label>收藏品(固定數值)</label>
+                                <datalist id="aacollection3">
+                                    <option value="50">
+                                    <option value="200">
+                                </datalist>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-floating">
-                                <input type="text" id="acollection4" placeholder="收藏品(固定數值)" class="form-control">
+                                <input list="aacollection4" id="acollection4" placeholder="收藏品(固定數值)"
+                                    class="form-control">
                                 <label>收藏品(固定數值)</label>
+                                <datalist id="aacollection4">
+                                    <option value="50">
+                                    <option value="200">
+                                </datalist>
                             </div>
                         </div>
                     </div>
@@ -80,101 +101,179 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-floating">
-                                <input type="text" id="afrp" placeholder="1號符文(%)" class="form-control">
+                                <!--<input list="text" id="afrp" placeholder="1號符文(%)" class="form-control"> -->
+                                <input list="afrpp" id="afrp" placeholder="1號符文(%)" class="form-control">
+                                <label>1號符文(%)</label>
+                                <datalist id="afrpp">
+                                    <option value="59.12(傳說BBS)">
+                                    <option value="51.36(英雄BBS)">
+                                    <option value="8(六星附屬性)">
+                                </datalist>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input type="text" id="afrpp" placeholder="1號符文(%)"
+                                    class="form-control">
                                 <label>1號符文(%)</label>
                             </div>
 
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="afrpp" placeholder="1號符文(%)" class="form-control">
-                                <label>1號符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="aafrf" id="afrf" placeholder="1號符文(固定數值)"
+                                    class="form-control">
+                                <label>1號符文(固定數值)</label>
+                            </div>
+                            <datalist id="aafrf">
+                                <option value="584(傳說BBS)">
+                                <option value="552(英雄BBS)">
+                                <option value="138(六星附屬性)">
+                            </datalist>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="afrf" placeholder="1號符文(固定數值)" class="form-control">
-                                <label>1號符文(固定數值)</label></div>
-                            
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="afrff" placeholder="1號符文(固定數值)" class="form-control">
-                                <label>1號符文(固定數值)</label></div>
-                            
+                            <div class="form-floating"><input type="text" id="afrff" placeholder="1號符文(固定數值)"
+                                    class="form-control">
+                                <label>1號符文(固定數值)</label>
+                            </div>
+
                         </div>
                     </div>
 
                     <br>
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="asrp" placeholder="2號符文(%)" class="form-control">
-                                <label>2號符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="aasrp" id="asrp" placeholder="2號符文(%)"
+                                    class="form-control">
+                                <label>2號符文(%)</label>
+                            </div>
+                            <datalist id="aasrp">
+                                <option value="59.12(傳說BBS)">
+                                <option value="51.36(英雄BBS)">
+                                <option value="8(六星附屬性)">
+                            </datalist>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="asrpp" placeholder="2號符文(%)" class="form-control">
-                                <label>2號符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="text" id="asrpp" placeholder="2號符文(%)"
+                                    class="form-control">
+                                <label>2號符文(%)</label>
+                            </div>
+
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="asrf" placeholder="2號符文(固定數值)" class="form-control">
-                                <label>2號符文(固定數值)</label></div>
-                            
+                            <div class="form-floating"><input list="aasrf" id="asrf" placeholder="2號符文(固定數值)"
+                                    class="form-control">
+                                <label>2號符文(固定數值)</label>
+                            </div>
+                            <datalist id="aasrf">
+                                <option value="584(傳說BBS)">
+                                <option value="552(英雄BBS)">
+                                <option value="138(六星附屬性)">
+                            </datalist>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="asrff" placeholder="2號符文(固定數值)" class="form-control">
-                                <label>2號符文(固定數值)</label></div>
-                            
+                            <div class="form-floating"><input list="text" id="asrff" placeholder="2號符文(固定數值)"
+                                    class="form-control">
+                                <label>2號符文(固定數值)</label>
+                            </div>
+
                         </div>
                     </div>
                     <br><br>
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="amrp" placeholder="神話符文(%)" class="form-control">
-                                <label>神話符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="aamrp" id="amrp" placeholder="神話符文(%)"
+                                    class="form-control">
+                                <label>神話符文(%)</label>
+                            </div>
+                            <datalist id="aamrp">
+                                <option value="13.39">
+                                <option value="13">
+                                <option value="8">
+                            </datalist>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="amrpp" placeholder="神話符文(%)" class="form-control">
-                                <label>神話符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="aamrpp" id="amrpp" placeholder="神話符文(%)"
+                                    class="form-control">
+                                <label>神話符文(%)</label>
+                            </div>
+                            <datalist id="aamrpp">
+                                <option value="13.39">
+                                <option value="13">
+                                <option value="8">
+                            </datalist>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="amrppp" placeholder="神話符文(%)" class="form-control">
-                                <label>神話符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="aamrppp" id="amrppp" placeholder="神話符文(%)"
+                                    class="form-control">
+                                <label>神話符文(%)</label>
+                            </div>
+                            <datalist id="aamrppp">
+                                <option value="13.39">
+                                <option value="13">
+                                <option value="8">
+                            </datalist>
                         </div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="amrf" placeholder="神話符文(固定數值)" class="form-control">
-                                <label>神話符文(固定數值)</label></div>
-                            
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="amrff" placeholder="神話符文(固定數值)" class="form-control">
-                                <label>神話符文(固定數值)</label></div>
-                            
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="amrfff" placeholder="神話符文(固定數值)"class="form-control">
+                            <div class="form-floating"><input list="aamrf" id="amrf" placeholder="神話符文(固定數值)"
+                                    class="form-control">
                                 <label>神話符文(固定數值)</label>
+                            </div>
+                            <datalist id="aamrf">
+                                <option value="54">
+                                <option value="52">
+                                <option value="138">
+                            </datalist>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input list="aamrff" id="amrff" placeholder="神話符文(固定數值)"
+                                    class="form-control">
+                                <label>神話符文(固定數值)</label>
+                            </div>
+                            <datalist id="aamrff">
+                                <option value="54">
+                                <option value="52">
+                                <option value="138">
+                            </datalist>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input list="aamrfff" id="amrfff" placeholder="神話符文(固定數值)"
+                                    class="form-control">
+                                <label>神話符文(固定數值)</label>
+                                <datalist id="aamrfff">
+                                    <option value="54">
+                                    <option value="52">
+                                    <option value="138">
+                                </datalist>
                             </div>
                         </div>
                     </div>
                     <hr>
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="acombination" placeholder="有才輸入,否則空白"
-                                    class="form-control">
+                            <div class="form-floating"><input list="aacombination" id="acombination"
+                                    placeholder="有才輸入,否則空白" class="form-control">
                                 <label>組合效果</label>
+                                <datalist id="aacombination">
+                                    <option value="15">
+                                    <option value="17.5">
+                                    <option value="20">
+                                    <option value="22.5">
+                                    <option value="25">
+                                </datalist>
                             </div>
 
                         </div>
                     </div>
-                        <div class="row">
-                            <h3>攻擊力</h3>
-                            <h2 id="mma"></h2>
-                        </div> 
+                    <div class="row">
+                        <h3>攻擊力</h3>
+                        <h2 id="mma"></h2>
+                    </div>
                 </form>
             </div>
 
@@ -192,8 +291,12 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-floating">
-                                <input type="text" id="armor" placeholder="防具(%)" class="form-control">
+                                <input list="armora" id="armor" placeholder="防具(%)" class="form-control">
                                 <label>防具(%)</label>
+                                <datalist id="armora">
+                                    <option value="5">
+                                    <option value="20">
+                                </datalist>
                             </div>
                         </div>
                     </div>
@@ -201,26 +304,44 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-floating">
-                                <input type="text" id="collection" placeholder="收藏品(%)" class="form-control">
+                                <input list="collectiona" id="collection" placeholder="收藏品(%)" class="form-control">
                                 <label>收藏品(%)</label>
+                                <datalist id="collectiona">
+                                    <option value="5">
+                                    <option value="20">
+                                </datalist>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-floating">
-                                <input type="text" id="collection2" placeholder="收藏品(%)" class="form-control">
+                                <input list="collection2a" id="collection2" placeholder="收藏品(%)" class="form-control">
                                 <label>收藏品(%)</label>
+                                <datalist id="collection2a">
+                                    <option value="5">
+                                    <option value="20">
+                                </datalist>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-floating">
-                                <input type="text" id="collection3" placeholder="收藏品(固定數值)" class="form-control">
+                                <input list="collection3a" id="collection3" placeholder="收藏品(固定數值)"
+                                    class="form-control">
                                 <label>收藏品(固定數值)</label>
+                                <datalist id="collection3a">
+                                    <option value="200">
+                                    <option value="800">
+                                </datalist>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-floating">
-                                <input type="text" id="collection4" placeholder="收藏品(固定數值)" class="form-control">
+                                <input list="collection4a" id="collection4" placeholder="收藏品(固定數值)"
+                                    class="form-control">
                                 <label>收藏品(固定數值)</label>
+                                <datalist id="collection4a">
+                                    <option value="200">
+                                    <option value="800">
+                                </datalist>
                             </div>
                         </div>
                     </div>
@@ -228,84 +349,156 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-floating">
-                                <input type="text" id="frp" placeholder="1號符文(%)" class="form-control">
+                                <input list="frpa" id="frp" placeholder="1號符文(%)" class="form-control">
+                                <label>1號符文(%)</label>
+                                <datalist id="frpa">
+                                    <option value="58.87(傳說BBS)">
+                                    <option value="51.36(英雄BBS)">
+                                    <option value="8(六星附屬性)">
+                                </datalist>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input list="text" id="frpp" placeholder="1號符文(%)"
+                                    class="form-control">
                                 <label>1號符文(%)</label>
                             </div>
 
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="frpp" placeholder="1號符文(%)" class="form-control">
-                                <label>1號符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="frfa" id="frf" placeholder="1號符文(固定數值)"
+                                    class="form-control">
+                                <label>1號符文(固定數值)</label>
+                                <datalist id="frfa">
+                                    <option value="2016(傳說BBS)">
+                                    <option value="552(六星附屬性)">
+                                </datalist>
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="frf" placeholder="1號符文(固定數值)" class="form-control">
-                                <label>1號符文(固定數值)</label></div>
-                            
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="frff" placeholder="1號符文(固定數值)" class="form-control">
-                                <label>1號符文(固定數值)</label></div>
-                            
+                            <div class="form-floating"><input list="text" id="frff" placeholder="1號符文(固定數值)"
+                                    class="form-control">
+                                <label>1號符文(固定數值)</label>
+                            </div>
+
                         </div>
                     </div>
 
                     <br>
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="srp" placeholder="2號符文(%)" class="form-control">
-                                <label>2號符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="srpa" id="srp" placeholder="2號符文(%)"
+                                    class="form-control">
+                                <label>2號符文(%)</label>
+                                <datalist id="srpa">
+                                    <option value="58.87(傳說BBS)">
+                                    <option value="51.36(英雄BBS)">
+                                    <option value="8(六星附屬性)">
+                                </datalist>
+                            </div>
+
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="srpp" placeholder="2號符文(%)" class="form-control">
-                                <label>2號符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="text" id="srpp" placeholder="2號符文(%)"
+                                    class="form-control">
+                                <label>2號符文(%)</label>
+                            </div>
+
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="srf" placeholder="2號符文(固定數值)" class="form-control">
-                                <label>2號符文(固定數值)</label></div>
-                            
+                            <div class="form-floating"><input list="srfa" id="srf" placeholder="2號符文(固定數值)"
+                                    class="form-control">
+                                <label>2號符文(固定數值)</label>
+                                <datalist id="srfa">
+                                    <option value="2016(傳說BBS)">
+                                    <option value="552(六星附屬性)">
+                                </datalist>
+                            </div>
+
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="srff" placeholder="2號符文(固定數值)" class="form-control">
-                                <label>2號符文(固定數值)</label></div>
-                            
+                            <div class="form-floating"><input list="text" id="srff" placeholder="2號符文(固定數值)"
+                                    class="form-control">
+                                <label>2號符文(固定數值)</label>
+                            </div>
+
                         </div>
                     </div>
                     <br><br>
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="mrp" placeholder="神話符文(%)" class="form-control">
-                                <label>神話符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="mrpa" id="mrp" placeholder="神話符文(%)"
+                                    class="form-control">
+                                <label>神話符文(%)</label>
+                                <datalist id="mrpa">
+                                    <option value="13.39">
+                                    <option value="13">
+                                    <option value="8">
+                                </datalist>
+                            </div>
+
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="mrpp" placeholder="神話符文(%)" class="form-control">
-                                <label>神話符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="mrppa" id="mrpp" placeholder="神話符文(%)"
+                                    class="form-control">
+                                <label>神話符文(%)</label>
+                                <datalist id="mrppa">
+                                    <option value="13.39">
+                                    <option value="13">
+                                    <option value="8">
+                                </datalist>
+                            </div>
+
                         </div>
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="mrppp" placeholder="神話符文(%)" class="form-control">
-                                <label>神話符文(%)</label></div>
-                            
+                            <div class="form-floating"><input list="mrpppa" id="mrppp" placeholder="神話符文(%)"
+                                    class="form-control">
+                                <label>神話符文(%)</label>
+                                <datalist id="mrpppa">
+                                    <option value="13.39">
+                                    <option value="13">
+                                    <option value="8">
+                                </datalist>
+                            </div>
+
                         </div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="mrf" placeholder="神話符文(固定數值)" class="form-control">
-                                <label>神話符文(固定數值)</label></div>
-                            
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="mrff" placeholder="神話符文(固定數值)" class="form-control">
-                                <label>神話符文(固定數值)</label></div>
-                            
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="mrfff" placeholder="神話符文(固定數值)"class="form-control">
+                            <div class="form-floating"><input list="mrfa" id="mrf" placeholder="神話符文(固定數值)"
+                                    class="form-control">
                                 <label>神話符文(固定數值)</label>
+                                <datalist id="mrfa">
+                                    <option value="218">
+                                    <option value="208">
+                                    <option value="552">
+                                </datalist>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input list="mrffa" id="mrff" placeholder="神話符文(固定數值)"
+                                    class="form-control">
+                                <label>神話符文(固定數值)</label>
+                                <datalist id="mrffa">
+                                    <option value="218">
+                                    <option value="208">
+                                    <option value="552">
+                                </datalist>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-floating"><input list="mrfffa" id="mrfff" placeholder="神話符文(固定數值)"
+                                    class="form-control">
+                                <label>神話符文(固定數值)</label>
+                                <datalist id="mrfffa">
+                                    <option value="218">
+                                    <option value="208">
+                                    <option value="552">
+                                </datalist>
                             </div>
                         </div>
 
@@ -313,18 +506,28 @@
                     <hr>
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="form-floating"><input type="text" id="combination" placeholder="有才輸入,否則空白" class="form-control">
+                            <div class="form-floating"><input list="combinationa" id="combination"
+                                    placeholder="有才輸入,否則空白" class="form-control">
                                 <label>組合效果</label>
+                                <datalist id="combinationa">
+                                    <option value="18">
+                                    <option value="21">
+                                    <option value="24">
+                                    <option value="27">
+                                    <option value="30">
+                                </datalist>
                             </div>
                         </div>
                     </div>
-                        <div class="row">
-                            <h3>生命力</h3>
-                            <h2 id="mmh"></h2>
-                        </div>
-                </form>
+
+                    <div class="row">
+                        <h3>生命力</h3>
+                        <h2 id="mmh"></h2>
+                    </div>
             </div>
+            </form>
         </div>
+    </div>
 
 
 
